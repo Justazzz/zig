@@ -59,7 +59,7 @@ cmake .. \
 unset CC
 unset CXX
 
-make $JOBS install
+make $JOBS
 
 # Build zig compiler cross-compiled for arm64
 cd $ZIGDIR
@@ -83,7 +83,7 @@ cmake .. \
 unset CC
 unset CXX
 
-make $JOBS install
+make $JOBS
 
 if [ "${BUILD_REASON}" != "PullRequest" ]; then
   mv ../LICENSE release/

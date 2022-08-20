@@ -45,7 +45,7 @@ cmake .. \
 unset CC
 unset CXX
 
-make $JOBS install
+make $JOBS
 
 stage2/bin/zig build \
   --prefix stage3-release \

@@ -38,7 +38,7 @@ cmake .. \
   -DZIG_TARGET_MCPU="$MCPU" \
   -DZIG_STATIC=ON \
   -GNinja
-samu install
+samu
 
 # TODO: eliminate this workaround. Without this, zig does not end up passing
 # -isystem /usr/include when building libc++, resulting in #include <sys/endian.h>
